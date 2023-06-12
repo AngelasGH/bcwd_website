@@ -5,11 +5,21 @@ import Paragraph from '../../components/Paragraph';
 import Table from 'react-bootstrap/Table';
 import Header3 from "../../components/Header3";
 import LabTable from "../../components/LabTable";
-// import '../../static/css/header2.css';
 import lab_doh from '../../static/img/lab_doh.jpg';
+
+/**
+ * modals
+ */
+import { useState } from "react";
+import { Button, Modal } from "react-bootstrap";
 
 
 const WaterQualityResult = () => {
+
+  const [show, setShow] = useState(false)
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
+
   const indiv_param = [
     {
       "data1": "Temperature",
@@ -114,18 +124,33 @@ const WaterQualityResult = () => {
             <Paragraph descript="BCWD had long set-up its own state-of-the-art laboratory facilities and equipment manned by licensed chemist and laboratory technician. This water testing laboratory is a duly Department of Health (DOH) accredited laboratory for physical, chemical and biological analyses." />
           </Col>
 
-          <Row className="my-5">
-            <Col xs={6} xl={12} className="mt-3 d-flex justify-content-center">
-              <img src={lab_doh} alt="lab doh" />
-            </Col>
-          </Row>
+          {/* <Button variant="primary" onClick={handleShow}>
+            Launch demo modal
+          </Button> */}
+
+          <p><a class="link-opacity-50-hover my-link" onClick={handleShow} style={{ cursor: "pointer", textDecoration: "underline" }}>View certificate</a></p>
+
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+              <Paragraph descript="Certificate of Accreditation" />
+            </Modal.Header>
+            <Modal.Body>
+              <Row>
+                <img src={lab_doh} alt="lab doh" />
+              </Row>
+            </Modal.Body>
+          </Modal>
+
 
           <Col xs={12} className="mt-3">
-            <Header3 header="Laboratory Charges" />
+            <br />
+            <h3 className="header2">Laboratory Charges</h3>
+            <br />
+            {/* <Header3 header="Laboratory Charges" /> */}
 
             <Row>
               <Col xs={6} xl={12} className="my-3">
-                <h3 className="header2">Bacteriological Analysis Charges</h3>
+                <h3 className="table-title">Bacteriological Analysis Charges</h3>
                 <Table striped bordered>
                   <thead>
                     <tr>
@@ -154,7 +179,7 @@ const WaterQualityResult = () => {
             <Row>
 
               <Col xs={6} xl={12} className="mt-3">
-                <h3 className="header2">Physical and Chemical Analysis</h3>
+                <h3 className="table-title">Physical and Chemical Analysis</h3>
                 <Table striped bordered>
                   <thead>
                     <tr>
@@ -222,13 +247,13 @@ const WaterQualityResult = () => {
 
             <Row>
               <Col xs={6} xl={12} className="mt-3">
-                <h3 className="header2">Individual Parameter</h3>
+                <h3 className="table-title">Individual Parameter</h3>
                 <LabTable datas={indiv_param} column1="Parameter" column2="Cost Per Sample" />
               </Col>
             </Row>
             <Row className="pb-5 mb-5">
               <Col xs={6} xl={12} className="mt-3">
-                <h3 className="header2">Pnsdw 2017 Required Tests
+                <h3 className="table-title">Pnsdw 2017 Required Tests
                   And Other Test Parameters</h3>
                 <LabTable datas={other_test} column1="Test" column2="Method" />
               </Col>

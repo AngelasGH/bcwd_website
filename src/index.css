@@ -1,4 +1,9 @@
 @font-face {
+  font-family: 'Roboto Thin';
+  src: url('./static/roboto-font/Roboto-Thin.ttf') format('truetype');
+}
+
+@font-face {
   font-family: 'Roboto Light';
   src: url('./static/roboto-font/Roboto-Light.ttf') format('truetype');
 }
@@ -16,7 +21,7 @@
 
 li {
   font-size: 14px;
-  font-style: 'Roboto Thin';
+  font-style: 'Roboto Light';
 }
 
 .link {
@@ -44,6 +49,7 @@ li {
   transition-duration: 0.4s;
   text-decoration: none;
 }
+
 
 /* Card WAS */
 
@@ -119,6 +125,7 @@ li {
   font-size: 14px;
   color: #ffff;
   font-family: 'Roboto Light';
+  text-align: start;
 }
 
 .link-tag {
@@ -253,6 +260,10 @@ font-family: 'Roboto Black', sans-serif;
   font-family: 'Roboto Light', sans-serif;
 }
 
+.my-link:hover {
+  color: #3cb9dc;
+}
+
 .dropdown {
   border-radius: 0;
 }
@@ -283,4 +294,103 @@ font-family: 'Roboto Black', sans-serif;
 .descript {
   font-size: 14px;
   font-style: 'Roboto Thin';
+}
+
+
+/**
+* BCWD News
+*/
+
+.myborder {
+  border-radius: 0 !important;
+}
+
+.fs-5 {
+  color: #3f3e3eeb !important;
+  font-family: 'Roboto Bold' !important;
+}
+
+/**
+  * water quality result
+  */
+
+th {
+  font-family: 'Roboto Light';
+  color: #454545 !important;
+  font-size: small;
+}
+
+td {
+  font-family: 'Roboto Light';
+  color: #454545 !important;
+  font-size: small;
+}
+
+.table-title {
+  color: #454545 !important;
+  font-family: 'Roboto Light';
+  font-size: 14px;
+}
+
+
+/**
+  * Bills and Paymenyt
+  */
+
+
+li {
+  font-family: "Roboto Light";
+  font-size: small;
+}
+
+/*
+  Form
+*/
+
+.input {
+  height: 4rem;
+}
+
+.notice {
+  padding: 0;
+  margin: 0;
+  color: #C2C8D0;
+  font-size: 11px;
+  font-family: "Roboto Light";
+}
+
+.input::placeholder {
+  color: #C2C8D0;
+  font-size: small;
+  font-family: "Roboto Light";
+
+}
+
+.label {
+  color: #7B7A7A;
+  font-weight: bold;
+  font-size: small;
+  font-family: "Roboto Regular";
+}
+
+/* Default Button */
+
+.defaultButton {
+
+  width: 10rem;
+  height: 3rem;
+  padding: 1em;
+  font-size: 0.8rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  border-radius: 0 !important;
+  background-color: #118DF0;
+  color: aliceblue;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+  text-decoration: none;
 }

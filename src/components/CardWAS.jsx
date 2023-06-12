@@ -17,7 +17,7 @@ const CardWAS = (props) => {
         <div className="card mycard">
             <div className="card-body">
                 <div className="container text-left">
-                    <div className="row row-cols-12 row-cols-lg-12 g-2 g-lg-12">
+                    <div className="row justify-content-center">
                         <div className="col-12 py-3 m-1">
                             <svg xmlns="http://www.w3.org/2000/svg" width="80" height="80" fill="white" className={biclass} viewBox="0 0 16 16">
                                 <path d={d1} />

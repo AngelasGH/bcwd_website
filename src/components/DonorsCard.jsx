@@ -8,7 +8,7 @@ import ButtonWAS from './ButtonWAS';
 
 const DonorsCard = () => {
     return (
-        <div className='container p-4 py-5'>
+        <div className='container m-5 '>
             <Card className='donorscard py-4'>
                 <Card.Img variant="top" src={Image} className="donor-border-image" />
             </Card>

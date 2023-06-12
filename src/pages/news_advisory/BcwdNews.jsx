@@ -5,14 +5,13 @@ import Container from 'react-bootstrap/Container';
 import Row from 'react-bootstrap/Row';
 import Col from 'react-bootstrap/Col';
 
-import Pagination from "../../components/Pagination";
 import Breadcrumb from "../../components/Breadcrumb";
 
 const BcwdNews = () => {
   return (
     <>
       <Banner title={"BCWD News"} />
-      <Container>
+      <Container >
         <Breadcrumb
           paths={[
             { name: "Home", url: "/" },
@@ -24,39 +23,39 @@ const BcwdNews = () => {
 
 
 
-        <Row lg={3} sm={2} xs={1} className="justify-content-start">
-          <Col>
+        <Row xl={3} lg={2} md={2} sm={1} xs={1}>
+          <Col className="d-flex justify-content-center align-items-center">
             <Cards />
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-center align-items-center">
             <Cards />
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-center align-items-center">
             <Cards />
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-center align-items-center">
             <Cards />
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-center align-items-center">
             <Cards />
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-center align-items-center">
             <Cards />
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-center align-items-center">
             <Cards />
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-center align-items-center">
             <Cards />
           </Col>
-          <Col>
+          <Col className="d-flex justify-content-center align-items-center">
             <Cards />
           </Col>
         </Row>
 
       </Container>
 
-      <Pagination />
+
     </>
   );
 };

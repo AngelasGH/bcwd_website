@@ -13,8 +13,8 @@ const MyFooter = () => {
                 {/* Grid row */}
                 <div className="row m-4">
                     {/* Grid column */}
-                    <div className="col-lg-6 col-md-12 mb-5 mb-md-0">
-                        <Navbar.Brand href="/">
+                    <div className="col-lg-6 col-md-6 col-sm-12 mb-5 mb-md-0 ">
+                        <Navbar.Brand href="/" className='d-flex justify-content-left align-items-left'>
                             <img
                                 src={logo3}
                                 width="150"
@@ -25,7 +25,7 @@ const MyFooter = () => {
                         </Navbar.Brand>
 
 
-                        <div className='container-fluid'>
+                        <div className='container'>
                             <div className='row'>
                                 <div className='col-lg-6'>
                                     <p className='footer'>
@@ -49,7 +49,7 @@ const MyFooter = () => {
                     {/* Grid column */}
 
                     {/* Grid column */}
-                    <div className="col-lg-3 col-md-6 mb-4 mb-md-0 mt-4">
+                    <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0 mt-4">
 
                         <div className='container'>
                             <FootHeader header="QUICK LINKS" />
@@ -79,7 +79,7 @@ const MyFooter = () => {
                     {/* <!--Grid column--> */}
 
                     {/* <!--Grid column--> */}
-                    <div className="col-lg-3 col-md-6 mb-4 mb-md-0 mt-4">
+                    <div className="col-lg-3 col-md-6 col-sm-12 mb-4 mb-md-0 mt-4">
                         <div className='container'>
                             <FootHeader header="ABOUT BCWD" />
                             <div className='row py-2'>
