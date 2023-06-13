@@ -128,11 +128,11 @@ const WaterQualityResult = () => {
             Launch demo modal
           </Button> */}
 
-          <p><a class="link-opacity-50-hover my-link" onClick={handleShow} style={{ cursor: "pointer", textDecoration: "underline" }}>View certificate</a></p>
+          <p><a className="link-opacity-50-hover my-link" onClick={handleShow} style={{ cursor: "pointer", textDecoration: "underline" }}>View certificate</a></p>
 
           <Modal show={show} onHide={handleClose}>
             <Modal.Header closeButton>
-              <Paragraph descript="Certificate of Accreditation" />
+              <h3 className="header2">Certificate of Accreditation</h3>
             </Modal.Header>
             <Modal.Body>
               <Row>

@@ -47,7 +47,7 @@ const Navigation = () => {
                                 <NavDropdown.Item as="div"><Link to="/faqs" className="my-link" >Faqs</Link></NavDropdown.Item>
                             </NavDropdown>
 
-                            <MyButton name="My Water Bill" className="px-5" />
+                            <Link to="/login" className="my-link"><MyButton name="My Water Bill" className="px-5" /></Link>
 
                         </Nav>
                     </Navbar.Collapse>

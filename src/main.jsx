@@ -7,6 +7,7 @@ import App from './App';
  *    Bootstrap Configuration
  */
 import 'bootstrap/dist/css/bootstrap.css';
+import 'bootstrap/dist/js/bootstrap.bundle.min.js';
 import 'react-bootstrap/dist/react-bootstrap.js';
 
 

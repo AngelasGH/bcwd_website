@@ -71,6 +71,14 @@ li {
 
 }
 
+.card-about-us {
+  color: #ffffff;
+  font-family: 'Roboto Light';
+  font-size: 14px;
+  text-align: center;
+
+}
+
 
 /* Connect With Us */
 
@@ -211,7 +219,6 @@ li {
 
 .header2 {
   font-size: 16px;
-  font-weight: bold;
   color: #3f3e3e;
   text-align: left;
   font-family: 'Roboto Regular';
@@ -393,4 +400,377 @@ li {
   /* Safari */
   transition-duration: 0.4s;
   text-decoration: none;
+}
+
+.card-about-us-core {
+  padding: 0;
+  margin: 0;
+  color: #ffffff;
+  font-family: 'Roboto Light';
+  font-size: 14px;
+  text-align: left;
+
+}
+
+.card-title {
+  font-size: 20px;
+  color: white !important;
+  text-align: center;
+  font-family: 'Roboto Bold';
+}
+
+.card-title-purpose {
+  font-size: 20px;
+  color: white !important;
+  text-align: left;
+  font-family: 'Roboto Bold';
+}
+
+#about-purpose {
+  height: 23rem;
+  background-color: #206DAB;
+  margin-bottom: 20rem;
+}
+
+.aboutus-image {
+  border-radius: 100% !important;
+  width: 33rem;
+  height: 27rem;
+}
+
+@media screen and (max-width: 576px) {
+  .aboutus-image {
+    display: none;
+  }
+
+  #about-purpose {
+    height: 18rem;
+    margin-bottom: 10rem;
+  }
+
+  .card-title {
+    font-size: 18px !important;
+  }
+
+  .card-about-us-core {
+
+    font-size: 14px !important;
+    text-align: left;
+
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .aboutus-image {
+    width: 20rem !important;
+    height: 20rem !important;
+  }
+
+  #about-purpose {
+    height: 18rem;
+    margin-bottom: 8rem;
+  }
+
+  .card-title {
+    font-size: 16px !important;
+  }
+
+  .card-about-us-core {
+
+    font-size: 12px !important;
+    text-align: left;
+
+  }
+}
+
+@media only screen and (max-width: 992px) {
+  .aboutus-image {
+    width: 24rem !important;
+    height: 24rem !important;
+  }
+
+  #about-purpose {
+    margin-bottom: 15rem;
+  }
+
+  .card-title {
+    font-size: 18px;
+  }
+
+  .card-about-us-core {
+
+    font-size: 15px;
+    text-align: left;
+
+  }
+}
+
+@media screen and (max-width: 1220px) {
+  .aboutus-image {
+    width: 30rem !important;
+    height: 30rem !important;
+  }
+
+  #about-purpose {
+    margin-bottom: 14rem;
+  }
+
+  .card-title {
+    font-size: 20px;
+  }
+
+  .card-about-us-core {
+
+    font-size: 14px;
+    text-align: left;
+
+  }
+}
+
+
+@media screen and (max-width: 1440px) {
+  .aboutus-image {
+    width: 32rem;
+    height: 32rem;
+  }
+
+  #about-purpose {
+    margin-bottom: 14rem;
+  }
+
+  .card-title {
+    font-size: 22px;
+  }
+
+  .card-about-us-core {
+
+    font-size: 16px;
+    text-align: left;
+
+  }
+}
+
+
+/*
+  Goals
+*/
+
+.goals {
+  padding: 1rem;
+  font-size: small;
+  font-family: "Roboto Light";
+  text-align: start;
+}
+
+.btn-goals {
+  border: none !important;
+  background-color: rgba(17, 141, 240, 44%) !important;
+  height: 4rem !important;
+}
+
+.font {
+  font-family: "Roboto Regular";
+}
+
+.mytext {
+  cursor: pointer;
+  background-color: #318CE7;
+  width: 200px;
+  height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.mytext:hover {
+  background-color: #81b1e2;
+
+}
+
+.faqs-list {
+  color: gray;
+  font-size: medium;
+  font-family: "Roboto Regular";
+}
+
+body {
+  margin-top: 20px;
+}
+
+.section_padding_130 {
+  padding-top: 130px;
+  padding-bottom: 130px;
+}
+
+.faq_area {
+  position: relative;
+  z-index: 1;
+  background-color: #f5f5ff;
+}
+
+.faq-accordian {
+  position: relative;
+  z-index: 1;
+}
+
+.faq-accordian .card {
+  position: relative;
+  z-index: 1;
+  margin-bottom: 1.5rem;
+}
+
+.faq-accordian .card:last-child {
+  margin-bottom: 0;
+}
+
+.faq-accordian .card .card-header {
+  background-color: #ffffff;
+  padding: 0;
+  border-bottom-color: #ebebeb;
+}
+
+.faq-accordian .card .card-header h6 {
+  cursor: pointer;
+  padding: 1.75rem 2rem;
+  color: #3f43fd;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+  -ms-flex-align: center;
+  -ms-grid-row-align: center;
+  align-items: center;
+  -webkit-box-pack: justify;
+  -ms-flex-pack: justify;
+  justify-content: space-between;
+}
+
+.faq-accordian .card .card-header h6 span {
+  font-size: 1.5rem;
+}
+
+.faq-accordian .card .card-header h6.collapsed {
+  color: #070a57;
+}
+
+.faq-accordian .card .card-header h6.collapsed span {
+  -webkit-transform: rotate(-180deg);
+  transform: rotate(-180deg);
+}
+
+.faq-accordian .card .card-body {
+  padding: 1.75rem 2rem;
+}
+
+.faq-accordian .card .card-body p:last-child {
+  margin-bottom: 0;
+}
+
+@media only screen and (max-width: 575px) {
+  .support-button p {
+    font-size: 14px;
+  }
+}
+
+.support-button i {
+  color: #3f43fd;
+  font-size: 1.25rem;
+}
+
+@media only screen and (max-width: 575px) {
+  .support-button i {
+    font-size: 1rem;
+  }
+}
+
+.support-button a {
+  text-transform: capitalize;
+  color: #2ecc71;
+}
+
+@media only screen and (max-width: 575px) {
+  .support-button a {
+    font-size: 13px;
+  }
+}
+
+
+/*
+  dropdown
+*/
+
+.mydropdown {
+  color: #363636;
+  font-family: "Roboto Light";
+  font-size: 12px;
+  letter-spacing: 0.5px;
+  text-transform: lowercase;
+}
+
+.mydropdown::after {
+  content: ".";
+}
+
+.mydropdown::first-letter {
+  text-transform: uppercase;
+}
+
+/*
+  Auth
+*/
+
+#login {
+  color: white;
+  background-image: linear-gradient(rgba(23, 69, 105, 0.65), rgba(23, 69, 105, 0.65)), url("./static/img/authbg.png");
+  width: 100%;
+  height: 100vh;
+  text-align: left;
+  background-size: cover;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+
+}
+
+#login input {
+  height: 3rem;
+  width: 25rem;
+}
+
+.btn-auth {
+  font-size: 0.7rem;
+  font-weight: 700;
+  outline: none;
+  border: none;
+  background-color: #118DF0;
+  color: aliceblue;
+  padding: 8px 30px;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+}
+
+
+.auth-a {
+  font-size: 14px !important;
+  color: #fcfcfc !important;
+}
+
+.auth-a-a {
+  font-size: 15px !important;
+  font-family: "Roboto Regular" !important;
+  color: #d6e7f5 !important;
+}
+
+.auth-a:hover {
+  color: #63b2f3af !important;
+}
+
+
+.btn-auth:hover {
+  background-color: #63b2f3af;
 }

@@ -1,4 +1,4 @@
-import { Container, Row, Col, Form, Button, Image } from "react-bootstrap";
+import { Container, Row, Col, Form, Image, Modal } from "react-bootstrap";
 import Breadcrumb from "../../components/Breadcrumb";
 import Paragraph from '../../components/Paragraph';
 import Banner from "../../components/Banner";
@@ -6,6 +6,7 @@ import Table from 'react-bootstrap/Table';
 import question from "../../static/svg/question.svg";
 import { useState } from "react";
 
+import bc_help from '../../static/img/bc_help.jpg';
 
 
 const BillCalculator = () => {
@@ -190,8 +191,8 @@ const BillCalculator = () => {
   }
 
   const [account_no, setAccountNo] = useState("");
-  const [cubicMeter, setCubicMeter] = useState(null);
-  const [result, setResult] = useState(0);
+  const [cubicMeter, setCubicMeter] = useState("");
+  const [result, setResult] = useState("");
 
   const handleInputChangeAccount = (e) => {
     setAccountNo(e.target.value);
@@ -211,6 +212,10 @@ const BillCalculator = () => {
       setResult(partialBill);
     }
   }
+  /** Modal */
+  const [show, setShow] = useState(false)
+  const handleClose = () => setShow(false);
+  const handleShow = () => setShow(true);
 
 
   return (
@@ -277,12 +282,23 @@ const BillCalculator = () => {
             </Col>
           </Col>
 
+          <Modal show={show} onHide={handleClose}>
+            <Modal.Header closeButton>
+              <h3 className="header2">Help</h3>
+            </Modal.Header>
+            <Modal.Body>
+              <Row>
+                <img src={bc_help} alt="lab doh" />
+              </Row>
+            </Modal.Body>
+          </Modal>
+
           <Col xs={6} lg={6} sm={6} className="mt-5 mb-5 pb-5">
             <Col xs={12} className="mx-4">
-              <h3 className="header2">Bill Calculator</h3>
+              <h3 className="header2">Bill Calculator<Image className="mx-4 mb-2" src={question} onClick={handleShow} style={{ cursor: 'pointer' }} /></h3>
               <Form className="mt-5" onSubmit={calculateBill}>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                  <Form.Label className="label">Control Number<Image className="mx-3" src={question} /></Form.Label>
+                  <Form.Label className="label">Control Number</Form.Label>
 
                   <Form.Control rows='10' type="text" placeholder="123-01234-1" className="input"
                     value={account_no}
@@ -291,7 +307,7 @@ const BillCalculator = () => {
                   />
                 </Form.Group>
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                  <Form.Label className="label">Cubic Meter Consumed<Image className="mx-3" src={question} /></Form.Label>
+                  <Form.Label className="label">Cubic Meter Consumed</Form.Label>
                   <Form.Control type="number" placeholder="e.g. 13" className="input"
                     value={cubicMeter}
                     onChange={handleInputChangeCubic}
@@ -305,7 +321,7 @@ const BillCalculator = () => {
 
               <Form className="mt-5">
                 <Form.Group className="mb-3" controlId="exampleForm.ControlInput1">
-                  <Form.Label className="label">Result<Image className="mx-3" src={question} /></Form.Label>
+                  <Form.Label className="label">Result</Form.Label>
                   <p className="notice">Calculates current or partial billing only. The result may not be reflected on your actual bill.</p>
                   <Form.Control type="email" placeholder="Partial Billing" className="input" value={result} disabled readOnly />
                 </Form.Group>

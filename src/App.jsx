@@ -24,6 +24,14 @@ import Transparency from './pages/company/Transparency';
 import ContactUs from './pages/contact_us/ContactUs';
 import Faqs from './pages/contact_us/Faqs';
 
+// Auth
+import Login from "./pages/authentication/Login";
+import Register from "./pages/authentication/Register";
+import NewPassword from "./pages/authentication/NewPassword";
+import ForgotPassword from "./pages/authentication/ForgotPassword";
+import VerificationCode from "./pages/authentication/VerificationCode";
+import SuccessfullyResetPassword from "./pages/authentication/SuccessfullyResetPassword";
+
 function App() {
   return (
     <>
@@ -50,6 +58,13 @@ function App() {
           <Route path='contactus' element={<ContactUs />} />
           <Route path='faqs' element={<Faqs />} />
 
+          {/* Authentication Page */}
+          <Route path='login' element={<Login />} />
+          <Route path='register' element={<Register />} />
+          <Route path='forgot_password' element={<ForgotPassword />} />
+          <Route path='verification_code' element={<VerificationCode />} />
+          <Route path='new_password' element={<NewPassword />} />
+          <Route path='successfully_reset_password' element={<SuccessfullyResetPassword />} />
           {/* error handler */}
           <Route path='*' element={<NoPage />} />
         </Route>
