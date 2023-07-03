@@ -6,7 +6,7 @@ const CardWAS = (props) => {
 
     const title = props.title;
     const descript = props.descript;
-    const my_link = props.my_link;
+    const my_link = props.mylink;
     const myname = props.name;
     const biclass = props.biclass;
     const d1 = props.d1;

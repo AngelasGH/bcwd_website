@@ -774,3 +774,132 @@ body {
 .btn-auth:hover {
   background-color: #63b2f3af;
 }
+
+.water-bill-layout {
+  overflow: hidden !important;
+}
+
+.myprofile p {
+  font-size: small;
+  font-family: "Roboto Light";
+}
+
+.btn-payment {
+  font-size: 0.8rem;
+  outline: none;
+  border: 1px solid lightgrey;
+  background-color: transparent;
+  color: grey;
+  padding: 15px 60px;
+  cursor: pointer;
+  text-transform: uppercase;
+  -webkit-transition-duration: 0.4s;
+  /* Safari */
+  transition-duration: 0.4s;
+}
+
+.water-bill-link:hover {
+  color: #049DD8 !important;
+}
+
+.custom-table {
+  border-radius: 50px !important;
+}
+
+.table-striped>tbody>tr:nth-child(2n+1)>td,
+.table-striped>tbody>tr:nth-child(2n+1)>th {
+  background-color: rgba(0, 173, 239, 0.40);
+}
+
+
+.dropdown ul {
+  display: none;
+}
+
+.dropdown.active ul {
+  display: block;
+}
+
+
+
+#notfound {
+  position: relative;
+  height: 100vh;
+}
+
+#notfound .notfound {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound {
+  max-width: 920px;
+  width: 100%;
+  line-height: 1.4;
+  text-align: center;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.notfound .notfound-404 {
+  position: absolute;
+  height: 100px;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateX(-50%);
+  z-index: -1;
+}
+
+.notfound .notfound-404 h1 {
+  font-family: maven pro, sans-serif;
+  color: #ececec;
+  font-weight: 900;
+  font-size: 276px;
+  margin: 0;
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  -webkit-transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%);
+}
+
+.notfound h2 {
+  font-family: maven pro, sans-serif;
+  font-size: 46px;
+  color: #000;
+  font-weight: 900;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.notfound p {
+  font-family: maven pro, sans-serif;
+  font-size: 16px;
+  color: #000;
+  font-weight: 400;
+  text-transform: uppercase;
+  margin-top: 15px;
+}
+
+.notfound a {
+  font-family: maven pro, sans-serif;
+  font-size: 14px;
+  text-decoration: none;
+  text-transform: uppercase;
+  background: #189cf0;
+  display: inline-block;
+  padding: 16px 38px;
+  border: 2px solid transparent;
+  border-radius: 40px;
+  color: #fff;
+  font-weight: 400;
+  -webkit-transition: .2s all;
+  transition: .2s all;
+}

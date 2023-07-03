@@ -14,7 +14,7 @@ const AboutUs = () => {
       <Banner title={"About US"} />
       <Breadcrumb paths={[
         { name: "Home", url: "/" },
-        { name: "Service Advisories", url: "/serviceadvisories" },
+        { name: "About US", url: "/aboutus" },
       ]} />
 
       <Container className="px-4 pb-5">

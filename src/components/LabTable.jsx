@@ -6,7 +6,7 @@ const LabTable = (props) => {
     const column2 = props.column2;
     const datas = props.datas;
     return (
-        <Table striped bordered hover>
+        <Table bordered hover>
             <thead>
                 <tr>
                     <th colSpan={6}>{column1}</th>

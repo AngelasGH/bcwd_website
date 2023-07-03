@@ -223,7 +223,7 @@ const BillCalculator = () => {
       <Banner title={"Bill Calculator"} />
       <Breadcrumb paths={[
         { name: "Home", url: "/" },
-        { name: "Service Advisories", url: "/serviceadvisories" },
+        { name: "Bill Calculator", url: "/billcalculator" },
       ]} />
 
       <Container className="px-4 pb-5">
@@ -236,7 +236,7 @@ const BillCalculator = () => {
           <Col xs={6} lg={6} sm={6} className="mt-5">
             <h3 className="header2">Water Rates</h3>
             <Col xs={12} sm={12} md={12} className="mt-5">
-              <Table striped bordered responsive>
+              <Table bordered responsive>
                 <thead>
                   <tr>
                     <th colSpan={2}>Classification</th>

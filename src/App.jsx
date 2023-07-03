@@ -32,6 +32,12 @@ import ForgotPassword from "./pages/authentication/ForgotPassword";
 import VerificationCode from "./pages/authentication/VerificationCode";
 import SuccessfullyResetPassword from "./pages/authentication/SuccessfullyResetPassword";
 
+// My Water Bill
+import MyProfile from "./pages/myWaterBill/MyProfile";
+import MyWaterBill from "./pages/myWaterBill/MyWaterBill";
+import ChangePassword from "./pages/myWaterBill/ChangePassword";
+import WaterBillLayout from "./pages/WaterBillLayout";
+
 function App() {
   return (
     <>
@@ -65,8 +71,26 @@ function App() {
           <Route path='verification_code' element={<VerificationCode />} />
           <Route path='new_password' element={<NewPassword />} />
           <Route path='successfully_reset_password' element={<SuccessfullyResetPassword />} />
+
+          {/* My Water Bill */}
+          <Route path='profile' element={<MyProfile />} />
+          <Route path='water_bill' element={<MyWaterBill />} />
+          <Route path='change_password' element={<ChangePassword />} />
+
           {/* error handler */}
           <Route path='*' element={<NoPage />} />
+        </Route>
+
+        {/* My Water Bill */}
+        <Route path='/bill' element={<WaterBillLayout />}>
+          {/* <Route index element={<MyWaterBill />} /> */}
+
+          {/* News & Advisories */}
+          <Route path='myprofile' element={<MyProfile />} />
+          <Route path='mywaterbill' element={<MyWaterBill />} />
+          <Route path='changepassword' element={<ChangePassword />} />
+
+
         </Route>
       </Routes>
     </>

@@ -151,7 +151,7 @@ const WaterQualityResult = () => {
             <Row>
               <Col xs={6} xl={12} className="my-3">
                 <h3 className="table-title">Bacteriological Analysis Charges</h3>
-                <Table striped bordered>
+                <Table bordered>
                   <thead>
                     <tr>
                       <th>Parameter</th>
@@ -180,7 +180,7 @@ const WaterQualityResult = () => {
 
               <Col xs={6} xl={12} className="mt-3">
                 <h3 className="table-title">Physical and Chemical Analysis</h3>
-                <Table striped bordered>
+                <Table bordered>
                   <thead>
                     <tr>
                       <th colSpan={2}>Parameter</th>

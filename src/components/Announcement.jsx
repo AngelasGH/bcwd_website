@@ -11,7 +11,7 @@ const Announcement = () => {
     return (
         <div className='bg-light'>
             <div className='container'>
-                <div className='row p-5'>
+                <div className='row p-4 pt-5'>
                     <div className='col-xl-4 col-lg-4 col-md-12 col-sm-11'>
                         <div className='container p-4'>
                             <Header1 header='LATEST NEWS' />
@@ -21,14 +21,14 @@ const Announcement = () => {
                             <Paragraph descript={descrip} />
                         </div>
                     </div>
-                    <div className='col-xl-4 col-lg-4 col-md-9 col-sm-11'>
+                    <div className='col-xl-3 col-lg-6 col-md-9 col-sm-11'>
                         <div className="container p-4">
                             <div className='row pt-4'>
                                 <img className='myimage' src={service_center} alt='hey' />
                             </div>
                         </div>
                     </div>
-                    <div className='col-xl-4 col-lg-4 col-md-8 col-sm-11 px-4 py-4'>
+                    <div className='col-xxl-4 col-xl-5 col-lg-6 col-md-8 col-sm-11 px-4 py-4'>
                         <div className='row'>
                             <div className='container p-4'>
                                 <Header1 header='ADVISORIES' />

@@ -37,7 +37,7 @@ const Faqs = () => {
       <Banner title={'Frequently Asked Questions'} />
       <Breadcrumb
         paths={[
-          { name: 'Company', url: '#' },
+          { name: 'home', url: '/' },
           { name: 'FAQs', url: '/faqs' },
         ]}
       />

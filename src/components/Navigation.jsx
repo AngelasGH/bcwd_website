@@ -17,8 +17,8 @@ const Navigation = () => {
                     <Navbar.Brand href="/">
                         <img
                             src={logo2}
-                            width="80"
-                            height="80"
+                            width="75"
+                            height="75"
                             className="d-inline-block align-top"
                             alt="BCWD 1974"
                         />

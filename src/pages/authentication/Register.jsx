@@ -31,7 +31,7 @@ function Register() {
                         </div>
 
                         <div className="col-lg-12 d-flex justify-content-center py-4">
-                            <a href="{% url 'user_home' %}"><button className="btn-auth">CREATE AN ACCOUNT</button></a>
+                            <a href="/bill/mywaterbill"><button className="btn-auth">Sign Up</button></a>
                         </div>
 
                         <div className="col-lg-12 d-flex justify-content-center pt-5">
